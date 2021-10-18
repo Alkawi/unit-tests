@@ -11,4 +11,9 @@ describe('getGreeting', () => {
     const result = getGreeting('Jane')
     expect(result).toBe('Hello Jane!')
   })
+
+  it('return "Hello Coach" when called with getGreeting("Jerry")', () => {
+    const result = getGreeting('Jerry')
+    expect(result).toBe('Hello Coach')
+  })
 })
